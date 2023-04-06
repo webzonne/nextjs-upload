@@ -109,7 +109,7 @@ export default function Home({ respuesta }) {
               </div>
               <div className="w-10/12 p-4 mx-auto border border-slate-700">
                 <p className="mb-5"><strong>Fotos</strong></p>
-                <Image src={urlPro+e.image.replace('public\\', '')} alt="fotos" width={120} height={120}/>
+                <Image src='https://nextjs-upload-271e0w59e-webzonne.vercel.app/uploads/1.jpg' alt="fotos" width={120} height={120}/>
               </div>
             </div>
           )
