@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from 'axios';
 import db from '../lib/db';
 import model from '../model/modelo';
-import Image from 'next/Image'
+import Image from 'next/image';
 
 // SERVER
 export async function getServerSideProps() {
