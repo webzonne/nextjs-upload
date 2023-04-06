@@ -3,6 +3,7 @@ import axios from 'axios';
 import db from '../lib/db';
 import model from '../model/modelo';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 // SERVER
 export async function getServerSideProps() {
@@ -25,6 +26,7 @@ export async function getServerSideProps() {
 
 
 export default function Home({ respuesta }) {
+  const {push} = useRouter()
   const imgURL = respuesta[0].image.replace("public\\", "");
   console.log(imgURL)
   const initial = {
@@ -63,6 +65,7 @@ export default function Home({ respuesta }) {
     } catch (error) {
       console.log(error);
     }
+    push('/')
   }
 
 
