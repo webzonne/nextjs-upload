@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['localhost'],
+    domains: ['https://nextjs-upload-271e0w59e-webzonne.vercel.app/'],
   },
 }
 module.exports = nextConfig
