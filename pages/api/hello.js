@@ -48,8 +48,8 @@ export default async function server(req,res){
   }
 }
 
-export const config = {
-  api: {
-    bodyParser: false, // Disallow body parsing, consume as stream
-  },
-};
+// export const config = {
+//   api: {
+//     bodyParser: false, // Disallow body parsing, consume as stream
+//   },
+// };
