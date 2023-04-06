@@ -3,6 +3,7 @@ import axios from 'axios';
 import db from '../lib/db';
 import model from '../model/modelo';
 import Image from 'next/image';
+import imagen from '../img/1.jpg'
 
 // SERVER
 export async function getServerSideProps() {
@@ -109,7 +110,7 @@ export default function Home({ respuesta }) {
               </div>
               <div className="w-10/12 p-4 mx-auto border border-slate-700">
                 <p className="mb-5"><strong>Fotos</strong></p>
-                <img src='https://nextjs-upload-271e0w59e-webzonne.vercel.app/uploads/1.jpg' alt="fotos" width={120} height={120}/>
+                <Image src={imagen} alt="fotos" width={120} height={120}/>
               </div>
             </div>
           )
