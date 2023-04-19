@@ -29,6 +29,7 @@ export default async function server(req,res){
           });
         });
         const { nombre, apellido, direccion } = req.body;
+        console.log(nombre)
         const image = req.file ? req.file.path : '';
         const data = new modelo({
           nombre,

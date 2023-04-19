@@ -28,7 +28,7 @@ export async function getServerSideProps() {
 export default function Home({ respuesta }) {
   const {push} = useRouter()
   const imgURL = respuesta[0].image.replace("public\\", "");
-  console.log(imgURL)
+  // console.log(imgURL)
   const initial = {
     nombre: '',
     apellido: '',
@@ -60,7 +60,7 @@ export default function Home({ respuesta }) {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
-      });
+      })
       console.log(response.data);
     } catch (error) {
       console.log(error);
